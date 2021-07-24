@@ -8,7 +8,8 @@ const thoughtSchema = new Schema(
       type: String,
       required: 'You need to leave a thought!',
       minlength: 1,
-      maxlength: 280
+      maxlength: 280,
+      match: [/^(?:http(s)?:\/\/)?(?:[\w-\.]+)(?:\.[A-z-\.]{2,63})(?:[\/#:](?:[\w-\.\(\)\*\+\$[\]~:?#!@&',;=]+))?$/gm, 'Must match an URL!']
     },
     createdAt: {
       type: Date,

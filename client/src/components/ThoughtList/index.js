@@ -6,6 +6,12 @@ const ThoughtList = ({ thoughts, title }) => {
     return <h3>No Thoughts Yet</h3>;
   }
 
+  const thoughtsArr = [
+    {
+      url: `{thought.thoughtText}`
+    },
+  ]
+
   return (
     <div>
       <h3>{title}</h3>
@@ -24,7 +30,7 @@ const ThoughtList = ({ thoughts, title }) => {
             </p>
             <div className="card-body">
               <Link to={`/thought/${thought._id}`}>
-                <p>{thought.thoughtText}</p>
+                <img src={thought.thoughtText} />
                 <p className="mb-0">
                   Votes: {thought.reactionCount} || Click to{' '}
                   {thought.reactionCount ? 'see' : 'start'} the discussion!

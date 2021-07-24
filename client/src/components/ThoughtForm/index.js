@@ -51,6 +51,7 @@ const ThoughtForm = () => {
       // clear form value
       setText('');
       setCharacterCount(0);
+      alert("hello");
     } catch (e) {
       console.error(e);
     }
