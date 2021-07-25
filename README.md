@@ -93,9 +93,9 @@ Jazzy made it? No, no he didn't. This beautiful product has been brought to you 
 
 ## Want to see it work?
 
-[DOKAY](www.Dokay.com)
+[DOKAY](www.Dokaly.com)
 
-[DOKAY Github](https://github.com/luiscabrera77/dokay.git)
+[DOKALY Github](https://github.com/luiscabrera77/dokaly21.git)
 
 <br>
 <br>
