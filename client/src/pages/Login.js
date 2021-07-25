@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
-
+import { useHistory } from "react-router-dom";
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN_USER);
-
+  let history = useHistory(); 
   // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -29,7 +29,8 @@ const Login = (props) => {
 
       console.log(data);
       Auth.login(data.login.token);
-
+      history.push("/profile");
+      
     } catch (e) {
       console.error(e);
     }

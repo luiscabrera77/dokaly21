@@ -4,16 +4,22 @@ import ThoughtList from '../components/ThoughtList';
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
 import { QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_IMAGE } from '../utils/queries'
+
 
 
 
 const Home = () => {
   // use useQuery hook to make query request
   const { loading, data } = useQuery(QUERY_THOUGHTS);
+  const { imageData } = useQuery(QUERY_IMAGE)
   // use object destructuring to extract `data` from the `useQuery` Hook's response and rename it `userData` to be more descriptive
   const thoughts = data?.thoughts || [];
   //console.log(thoughts);
   const loggedIn = Auth.loggedIn();
+  const images = imageData?.thoughtText || [];
+
+  console.log(images);
 
   return (
 <main>

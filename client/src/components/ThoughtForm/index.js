@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+
+import { useHistory } from "react-router-dom";
 import { useMutation } from '@apollo/client';
 import { ADD_THOUGHT } from '../../utils/mutations';
 import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
@@ -7,7 +9,7 @@ import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
 const ThoughtForm = () => {
   const [thoughtText, setText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
-
+  let history = useHistory();
   const [addThought, { error }] = useMutation(ADD_THOUGHT, {
     update(cache, { data: { addThought } }) {
       try {
@@ -51,7 +53,8 @@ const ThoughtForm = () => {
       // clear form value
       setText('');
       setCharacterCount(0);
-      alert("hello");
+      //alert("Submitted");
+      history.push("/")
     } catch (e) {
       console.error(e);
     }
@@ -61,7 +64,7 @@ const ThoughtForm = () => {
     <div>
       <p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
         Submit a cover: {characterCount}/280
-        {error && <span className="ml-2">Something went wrong...</span>}
+        {error && <span className="ml-2">Something went wrong...</span> }
       </p>
       <form
         className="flex-row justify-center justify-space-between-md align-stretch"

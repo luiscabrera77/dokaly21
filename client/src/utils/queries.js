@@ -36,6 +36,13 @@ export const QUERY_THOUGHT = gql`
   }
 `;
 
+export const QUERY_IMAGE = gql`
+  query thought ($id: ID!) {
+    thought(_id: $id)
+      thoughtText
+  }
+`
+
 export const QUERY_USER = gql`
   query user($username: String!) {
     user(username: $username) {
