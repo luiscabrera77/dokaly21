@@ -93,7 +93,7 @@ Jazzy made it? No, no he didn't. This beautiful product has been brought to you 
 
 ## Want to see it work?
 
-[DOKAY](www.Dokaly.com)
+[DOKALY](www.Dokaly.com)
 
 [DOKALY Github](https://github.com/luiscabrera77/dokaly21.git)
 
