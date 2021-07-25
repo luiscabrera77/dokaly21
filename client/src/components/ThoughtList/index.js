@@ -1,44 +1,20 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
 
-const ThoughtList = ({ thoughts, title }) => {
+const ThoughtList = ({ thoughts }) => {
   if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3>No Covers Yet</h3>;
   }
 
-  const thoughtsArr = [
-    {
-      url: `{thought.thoughtText}`
-    },
-  ]
-
   return (
-    <div>
-      <h3>{title}</h3>
-      {thoughts &&
-        thoughts.map(thought => (
-          <div key={thought._id} className="card mb-3">
-            <p className="card-header">
-              <Link
-                to={`/profile/${thought.username}`}
-                style={{ fontWeight: 700 }}
-                className="text-light"
-              >
-                {thought.username}
-              </Link>{' '}
-              thought on {thought.createdAt}
-            </p>
-            <div className="card-body">
-              <Link to={`/thought/${thought._id}`}>
-                <img src={thought.thoughtText} />
-                <p className="mb-0">
-                  Votes: {thought.reactionCount} || Click to{' '}
-                  {thought.reactionCount ? 'see' : 'start'} the discussion!
-                </p>
-              </Link>
+    <div id='cardDivs' className="px-3">
+      <div className='cardContainerhorizontal'>
+        {thoughts &&
+          thoughts.map(thought => (
+            <div key={thought._id}>
+              <div style={{ backgroundImage: 'url(' + thought.thoughtText + ')' }} className='cardhorizontal'></div>
             </div>
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 };

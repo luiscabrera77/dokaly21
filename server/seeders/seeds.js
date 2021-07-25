@@ -37,7 +37,7 @@ db.once('open', async () => {
 
   // create thoughts
   let createdThoughts = [];
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 30; i += 1) {
     const thoughtText = faker.image.image(400, 600, true);
 
     const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);

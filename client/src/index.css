@@ -18,9 +18,22 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  min-height: 100%;
+#root {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: scroll; /*hidden*/
+  /* background: linear-gradient(#fff, #999); */
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+#root>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -31,7 +44,21 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--light);
-  background: linear-gradient(#e66465, #9198e5)
+}
+
+.app>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+.row>* {
+  margin: 5px;
 }
 
 h1,
@@ -44,7 +71,7 @@ h6 {
   font-weight: 700;
   margin: 5px 0;
   line-height: 1.25;
-  text-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  text-shadow: 0px 0px 60px 0px rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -58,7 +85,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
+  color:#fff;
+  text-shadow: 2px 2px 60px 0px rgba(0,0,0,0.50);
 }
 
 h4 {
@@ -134,13 +163,45 @@ nav a:hover {
   display: inline;
 }
 
-/* CARDS */
+/* CARDS SWIPEABLE*/
 .card {
-  margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  background-color: var(--light);
-  color: var(--dark);
+  position: relative;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 260px;
+  height: 300px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.01);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: bottom;
+  padding-bottom: 40px;
+}
+
+.cardhorizontal {
+  position: relative;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 260px;
+  height: 270px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.01);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: bottom;
+  padding-bottom: 40px;
+  margin-right: 40px;
+}
+
+.cardwide {
+  position: relative;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 500px;
+  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-header {
@@ -154,6 +215,34 @@ nav a:hover {
 .card-body {
   padding: 2.5%;
   font-size: 1.4rem;
+}
+
+.cardContainer {
+  width: 90vw;
+  max-width: 260px;
+  height: 300px;
+  display: inline-flex;
+}
+
+.cardContainerhorizontal {
+  width: 90vw;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  overflow: scroll;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.swipe:last-of-type {
+
 }
 
 /* FORM */
@@ -231,16 +320,40 @@ nav a:hover {
   transform: scale(1);
 }
 
+.buttons {
+  margin: 20px;
+  display: inline;
+}
+
+.buttons button {
+  flex-shrink: 0;
+  padding: 10px;
+  margin-bottom: 10px;;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #9198e5;
+  transition: 200ms;
+  margin: 0 10px;
+  font-weight: bolder;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+  display: inline;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
 /* LAYOUT */
 .container {
-  width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container-fluid {
-  width: 92%;
+  width: 100%;
 }
 
 /* DISPLAY */
@@ -827,8 +940,10 @@ nav a:hover {
   justify-content: flex-end;
 }
 
+/* KILL */
 .justify-center {
   justify-content: center;
+  padding-top: 10px;
 }
 
 .align-stretch {
@@ -839,8 +954,10 @@ nav a:hover {
   align-items: flex-end;
 }
 
-.align-center {
+.centered {
   align-items: center;
+  justify-content: center;
+  padding-top: 0px;
 }
 
 .col-auto {
@@ -1250,4 +1367,19 @@ nav a:hover {
   .align-center-xl {
     align-items: center;
   }
+}
+
+@keyframes popup {
+  0%   { transform: scale(1,1) }
+  10%  { transform: scale(1.1,1.1) }
+  30%  { transform: scale(.9,.9) }
+  50%  { transform: scale(1,1) }
+  57%  { transform: scale(1,1) }
+  64%  { transform: scale(1,1) }
+  100% { transform: scale(1,1) }
+}
+
+.hidden {
+  visibility: hidden;
+  display:none;
 }
