@@ -69,7 +69,7 @@ Jazzy made it? No, no he didn't. This beautiful product has been brought to you 
 - [Jason](https://github.com/jayeebee)
 - [Zach](https://github.com/zpuckett)
 - [dj](djrhoten@gmail.com)
-- Freddy
+
 
 ---
 
