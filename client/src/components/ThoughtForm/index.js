@@ -59,7 +59,7 @@ const ThoughtForm = () => {
 
   return (
     <main className='flex-row justify-center mb-4'>
-      <div className='col-12 col-md-6'>
+      <div className='col-8 col-md-6'>
         <div className='cardwide'>
           <h4 className='card-header'>Contribute</h4>
           <div className='card-body'>
@@ -79,7 +79,11 @@ const ThoughtForm = () => {
             </form>
           </div>
         </div>
-      </div>    
+      </div>
+      <div className="centered px-3">
+        <br />
+      Make sure that your link works and that you have permission to share the picture!
+      </div>
     </main>
         );
 };

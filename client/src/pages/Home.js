@@ -12,7 +12,7 @@ const Home = () => {
     {loggedIn ? (
         < Cards />
     ):( <div className="col-3 mb-3">
-      <p className="centered">Welcome to DOKALY, the tinder for Music and Album Covers. <br /><br /> Press play, enjoy the music and simply swipe right for the covers you feel make sense for that music. You can also submit pictures</p>
+      <h3 className='infoText px-3'>Help music artists pick the right art for their songs. <br /><br />This week, we are featuring DJ KAZ's song "Blackanese". The author of the picture with the most votes will be a VIP guest at KAZ's graduation party!<br /><br />Feeling artistic? You can also contribute and propose a new cover, check it out!</h3>
       </div>
     )}
   </div>

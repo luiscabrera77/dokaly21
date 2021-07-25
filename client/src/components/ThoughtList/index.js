@@ -11,7 +11,9 @@ const ThoughtList = ({ thoughts }) => {
         {thoughts &&
           thoughts.map(thought => (
             <div key={thought._id}>
-              <div style={{ backgroundImage: 'url(' + thought.thoughtText + ')' }} className='cardhorizontal'></div>
+              <div style={{ backgroundImage: 'url(' + thought.thoughtText + ')' }} className='cardhorizontal'>
+              <h3>{thought.reactionCount} right swipes</h3>
+              </div>
             </div>
           ))}
       </div>

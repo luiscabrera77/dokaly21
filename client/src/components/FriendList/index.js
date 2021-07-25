@@ -8,9 +8,9 @@ const FriendList = ({ friendCount, username, friends }) => {
 
   return (
     <div>
-      <h5>
+      <div className="centered px-3">
         {friendCount === 1 ? 'Fan of:' : 'Fan of:'}
-      </h5>
+      </div>
       <div className="buttons">
       {friends.map(friend => (
         <button className='button' key={friend._id}>

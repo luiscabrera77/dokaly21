@@ -63,7 +63,7 @@ function Cards () {
       </div>
       <br /><br />
       <div className="centered px-3">
-        {lastDirection ? <h2 key={lastDirection} className='infoText'>You swiped {lastDirection}</h2> : <h3 className='infoText'>Press play to start listening and swipe right if you like this cover!</h3>}
+        {lastDirection ? <h2 key={lastDirection} className='infoText'>You swiped {lastDirection}</h2> : <h3 className='infoText'>Press play to start listening Blackanese by DJ Kaz, and swipe right if you like this picture as the art for the song!</h3>}
       </div>
     </div>
   )
