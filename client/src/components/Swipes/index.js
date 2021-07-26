@@ -1,7 +1,6 @@
 /* global WebKitCSSMatrix */
 import React from 'react'
 
-function Swipes () {
 const sleep = require('p-sleep')
 
 const settings = {
@@ -246,6 +245,5 @@ const Swipes = React.forwardRef(({ flickOnSwipe = true, children, onSwipe, onCar
     React.createElement('div', { ref, className }, children)
   )
 })
-}
 
 export default Swipes
