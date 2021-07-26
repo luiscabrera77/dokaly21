@@ -1,4 +1,7 @@
-![DOKAY](https://user-images.githubusercontent.com/54341829/126934427-e90e942e-7a66-4777-a2f5-087a5407a69e.gif)
+
+![DOKALY-LOGO](https://user-images.githubusercontent.com/54341829/126936657-5adb6d97-d118-4789-8815-a711a9a2c61c.png)
+
+![DOKALY21](https://user-images.githubusercontent.com/54341829/126936573-468bdbb0-c03e-46c6-b2d9-5ebdaad3bc5f.gif)
 
 ## Match maker match maker make me a match already!
 
