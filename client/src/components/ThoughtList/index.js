@@ -5,7 +5,7 @@ import React from 'react';
 const ThoughtList = ({ thoughts }) => {
   if (!thoughts.length) {
     return <div>
-    <img src="https://media.giphy.com/media/XErx4Alxhy7Uo9D6hX/source.gif" style={{ width:350}}/>
+    <img src="https://media.giphy.com/media/XErx4Alxhy7Uo9D6hX/source.gif" alt="No contributions" style={{ width:350}}/>
     <h3>No Contributions</h3>
     </div>
     ;
