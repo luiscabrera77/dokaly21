@@ -246,4 +246,8 @@ const Swipes = React.forwardRef(({ flickOnSwipe = true, children, onSwipe, onCar
   )
 })
 
+<<<<<<< HEAD
 export default Swipes
+=======
+export default Swipes;
+>>>>>>> 705b0e355aca86b1723e0a6927747c041e59e1b5
