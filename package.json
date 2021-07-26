@@ -1,7 +1,10 @@
 {
-  "name": "DOKALY",
+  "name": "dokaly",
   "version": "1.0.0",
-  "description": "Tinder for Music and Art",
+  "description": "Kind of a Tinder for Music and Art",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",

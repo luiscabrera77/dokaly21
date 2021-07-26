@@ -21,7 +21,7 @@ db.once('open', async () => {
   const createdUsers = await User.collection.insertMany(userData);
 
   // create friends
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 20; i += 1) {
     const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
     const { _id: userId } = createdUsers.ops[randomUserIndex];
 
@@ -37,7 +37,7 @@ db.once('open', async () => {
 
   // create thoughts
   let createdThoughts = [];
-  for (let i = 0; i < 30; i += 1) {
+  for (let i = 0; i < 20; i += 1) {
     const thoughtText = faker.image.image(400, 600, true);
 
     const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
@@ -54,8 +54,8 @@ db.once('open', async () => {
   }
 
   // create reactions
-  for (let i = 0; i < 10; i += 1) {
-    const reactionBody = faker.random.boolean();
+  for (let i = 0; i < 50; i += 1) {
+    const reactionBody = faker.random.arrayElement(['I love it!','please dont','seriously?','amazing','like','dont like','maybe','perfect','+1','this.','love the colors','horrible']);
 
     const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
     const { username } = createdUsers.ops[randomUserIndex];
