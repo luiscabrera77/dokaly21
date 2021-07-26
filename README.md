@@ -12,6 +12,9 @@
 - [Who made it work](#who-made-it-work)
 - [What made it work](#what-made-it-work)
 - [See it Live](#see-it-live)
+- [Installation](#installation)
+- [Usage] (#usage)
+- [License] (#license)
 
 ---
 
@@ -34,7 +37,6 @@ Each week, we feature a music artist and one of his songs. The fans are able to 
 ---
 
 ## Who made it work
-
 This beautiful product has been brought to you by the thoughtful and caring people at Furious 6ix.
 
 - [Luis](https://github.com/luiscabrera77)
@@ -47,7 +49,6 @@ This beautiful product has been brought to you by the thoughtful and caring peop
 ---
 
 ## What made it work
-
 - [MongoDB](https://www.mongodb.com/)
 - [Express](https://expressjs.com/)
 - [React](https://reactjs.org/)
@@ -58,7 +59,40 @@ But it also uses a plethora of packages like jwt, graphql, react-tinder-card, NP
 ---
 
 ## Want to see it work?
-
 [Heroku](https://powerful-eyrie-95631.herokuapp.com/)
+
+---
+
+## Installation
+run "npm install" and then run "npm run seed"
+
+---
+
+## Usage
+"npm run develop" to start locally, and then "git push heroku main" to publish in Heroku (you must setup Mongo first)
+
+---
+
+## License
+MIT License Copyright
+(view most recent version at https://spdx.org/licenses/MIT.html)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
 
 ##### ©2021 The Furious 6ix
