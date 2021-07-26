@@ -21,7 +21,7 @@ const Submit = () => {
         <ThoughtForm />
       </div>
     ):( <div className="col-12 mb-3">
-      <p className="text-center">please login or sign up to contibute</p>
+      <h3>Please login or sign up to contribute</h3>
       </div>
     )}
   </div>

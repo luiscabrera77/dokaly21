@@ -1,11 +1,20 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import Auth from '../utils/auth';
 import Cards from '../components/Cards';
 
-
+import { useQuery } from '@apollo/client';
+import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 const Home = () => {
+  const { username: userParam } = useParams();
+  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+    variables: { username: userParam }
+  });
+
+  const user = data?.me || data?.user || {};
+
   const loggedIn = Auth.loggedIn();
   return (
 <main>
@@ -13,7 +22,10 @@ const Home = () => {
     {loggedIn ? (
       < Cards />
     ):( <div className="textcontainer">
-      <h3 className='infoText px-3'>Help music artists pick the right art for their songs. <br /><br />This week, we are featuring DJ KAZ's song "Blackanese". The author of the picture with the most votes will be a VIP guest at KAZ's graduation party!<br /><br />Feeling artistic? You can also contribute and propose a new cover, check it out!</h3>
+      <h3 className='infoText px-3'>
+      Today's Featured Artist and song:
+      </h3>
+      <img src="/cover.png" alt="DJKAZ" style={{width:350}}/>
       </div>
     )}
   </div>

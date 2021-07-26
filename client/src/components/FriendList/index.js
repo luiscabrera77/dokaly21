@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FriendList = ({ friendCount, username, friends }) => {
   if (!friends || !friends.length) {
-    return <h5>{username}, doesn't follow anyone yet!</h5>;
+    return <h5>{username} doesn't follow anyone yet!</h5>;
   }
 
   return (

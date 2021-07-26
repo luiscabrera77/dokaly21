@@ -36,7 +36,7 @@ const ReactionForm = ({ thoughtId }) => {
   return (
     <div>
       <p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
-        Character Count: {characterCount}/280
+        {characterCount} characters (280 max)
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <form

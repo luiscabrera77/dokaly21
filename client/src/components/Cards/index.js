@@ -5,10 +5,6 @@ import Swipes from '../Swipes'
 import { useQuery } from '@apollo/client';
 import { QUERY_THOUGHTS } from '../../utils/queries';
 
-//to submit reaction
-import { useMutation } from '@apollo/client';
-import { ADD_REACTION } from '../../utils/mutations';
-
 function Cards () {
 
   const { data } = useQuery(QUERY_THOUGHTS);
@@ -36,45 +32,7 @@ function Cards () {
     setCharacters(charactersState)
   }
 
-  const swipe = (dir) => {
-    const cardsLeft = characters.filter(person => !alreadyRemoved.includes(person.name))
-    if (cardsLeft.length) {
-      const toBeRemoved = cardsLeft[cardsLeft.length - 1].name // Find the card object to be removed
-      const index = db.map(person => person.name).indexOf(toBeRemoved) // Find the index of which to make the reference to
-      alreadyRemoved.push(toBeRemoved) // Make sure the next card gets removed next time if this card do not have time to exit the screen
-      childRefs[index].current.swipe(dir) // Swipe the card!
-    }
-  }
 
-  const doSomething = () => {
-    var something=thoughts.map(thought => {return {id:thought._id}});
-    alert(something.id);
-  }
-
-  // submit form
-  // onBlur={() => doSomething()}
-
-  const ReactionForm = ({ thoughtId }) => {
-  const [reactionBody, setBody] = useState('');
-  const [characterCount, setCharacterCount] = useState(0);
-  const [addReaction, { error }] = useMutation(ADD_REACTION);
-
-  const handleFormSubmit = async event => {
-    event.preventDefault();
-
-    try {
-      await addReaction({
-        variables: { reactionBody, thoughtId }
-      });
-
-      // clear form value
-      setBody('');
-      setCharacterCount(0);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-}
 
   return (
     <div id='cardDivs'>
@@ -96,7 +54,7 @@ function Cards () {
       </div>
       <br /><br />
       <div className="textcontainer centered px-3">
-      <h3 className='infoText'>Press play, volume up, swipe through the art, and comment on what you like!</h3>
+      <h3 className='infoText'>Press play, swipe through the art, comment on what you like, follow artists and submit your own art!</h3>
       </div>
       {/*<div className='buttons hidden'>
         <button onClick={() => swipe('left')}>No</button>
