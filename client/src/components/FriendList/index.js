@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const FriendList = ({ friendCount, username, friends }) => {
   if (!friends || !friends.length) {
-    return <h5>{username}, is not a fan of anyone yet!</h5>;
+    return <h5>{username}, doesn't follow anyone yet!</h5>;
   }
 
   return (
     <div>
       <div className="centered px-3">
-        {friendCount === 1 ? 'Fan of:' : 'Fan of:'}
+        <h6>{username} follows</h6>
       </div>
       <div className="buttons">
       {friends.map(friend => (

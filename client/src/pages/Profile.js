@@ -49,6 +49,7 @@ const Profile = props => {
     } catch (e) {
       console.error(e);
     }
+    alert("A shortcut to this profile has been added in your Me page");
   };
 
   return (
@@ -56,7 +57,7 @@ const Profile = props => {
       <div>
         {userParam && (
           <button className="btn ml-auto" onClick={handleClick}>
-            Become a Fan of {user.username}
+            Follow {user.username}
           </button>
         )}
       </div>

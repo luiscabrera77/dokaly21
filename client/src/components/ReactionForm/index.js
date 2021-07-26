@@ -44,13 +44,13 @@ const ReactionForm = ({ thoughtId }) => {
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Leave a reaction to this thought..."
+          placeholder="Why is this a good (or bad) match for the song?"
           value={reactionBody}
-          className="form-input col-12 col-md-9"
+          className="form-input col-12"
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 col-md-3" type="submit">
+        <button className="btn col-12" type="submit">
           Submit
         </button>
       </form>

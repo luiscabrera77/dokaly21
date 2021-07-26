@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luiscabrera77/deep-thoughts.git"
+    "url": "git+https://github.com/luiscabrera77/dokaly21.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luiscabrera77/deep-thoughts/issues"
+    "url": "https://github.com/luiscabrera77/dokaly21/issues"
   },
-  "homepage": "https://github.com/luiscabrera77/deep-thoughts#readme",
+  "homepage": "https://github.com/luiscabrera77/dokaly21#readme",
   "devDependencies": {
     "concurrently": "^6.2.0"
   },

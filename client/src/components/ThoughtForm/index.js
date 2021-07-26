@@ -51,7 +51,6 @@ const ThoughtForm = () => {
       // clear form value
       setText('');
       setCharacterCount(0);
-      alert("hello");
     } catch (e) {
       console.error(e);
     }
@@ -81,8 +80,8 @@ const ThoughtForm = () => {
         </div>
       </div>
       <div className="centered px-3">
-        <br />
-      Make sure that your link works and that you have permission to share the picture!
+      <br />
+      Make sure that you have permission to share the picture!
       </div>
     </main>
         );
