@@ -16,8 +16,8 @@
 - [What made it work](#what-made-it-work)
 - [See it Live](#see-it-live)
 - [Installation](#installation)
-- [Usage] (#usage)
-- [License] (#license)
+- [Usage](#usage)
+- [License](#license)
 
 ---
 
