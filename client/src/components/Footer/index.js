@@ -3,7 +3,7 @@ import Blackanese from '../../assets/Blackanese.mp3';
 
 const Footer = () => {
   return (
-    <footer className="w-100 mt-auto p-4">
+    <footer className="w-100 mt-auto mb-4 pb-6">
       <audio id="player" allow="autoplay" loop controls>
         <source src={Blackanese} type="audio/mpeg" />
       </audio><br />

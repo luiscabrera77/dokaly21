@@ -18,6 +18,7 @@ const Submit = () => {
   <div className="flex-row justify-space-between">
     {loggedIn ? (
       <div className="col-12 mb-3">
+      <h3>Submit your own art for this song!</h3>
         <ThoughtForm />
       </div>
     ):( <div className="col-12 mb-3">

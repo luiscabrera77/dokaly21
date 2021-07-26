@@ -12,6 +12,7 @@
   --spacing-three: 1rem;
   --spacing-four: calc(1rem * 1.5);
   --spacing-five: calc(1rem * 3);
+  --spacing-six: calc(1rem * 6);
 }
 
 * {
@@ -688,6 +689,10 @@ nav a:hover {
 
 .pb-5 {
   padding-bottom: var(--spacing-five);
+}
+
+.pb-6 {
+  padding-bottom: var(--spacing-six);
 }
 
 .pb-auto {

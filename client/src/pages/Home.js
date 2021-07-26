@@ -22,9 +22,6 @@ const Home = () => {
     {loggedIn ? (
       < Cards />
     ):( <div className="textcontainer">
-      <h3 className='infoText px-3'>
-      Today's Featured Artist and song:
-      </h3>
       <img src="/cover.png" alt="DJKAZ" style={{width:350}}/>
       </div>
     )}

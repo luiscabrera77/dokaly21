@@ -41,11 +41,11 @@ function Cards () {
           <Swipes ref={childRefs[index]} className='swipe' key={character.url} onSwipe={(dir) => swiped(dir, character.name)} onCardLeftScreen={() => outOfFrame(character.name)}>
             <div style={{ backgroundImage: 'url(' + character.url + ')' }} className='card'>
             <Link to={`profile/${character.name}`}>
-              <h3>by {character.name}</h3>
+              <h3 onTouchStart={() => window.location.assign('profile/'+`${character.name}`)}>by {character.name}</h3>
             </Link>
             <Link to={`thought/${character.id}`}>
             <div className="buttons">
-              <button className="button">Comment</button>
+              <button className="button" onTouchStart={() => window.location.assign('thought/'+`${character.id}`)}>Comment</button>
             </div>
             </Link>
             </div>
@@ -54,7 +54,7 @@ function Cards () {
       </div>
       <br /><br />
       <div className="textcontainer centered px-3">
-      <h3 className='infoText'>Press play, swipe through the art, comment on what you like, follow artists and submit your own art!</h3>
+      <h3 className='infoText'>Listen to the song, swipe through the art, and comment on what you like!</h3>
       </div>
       {/*<div className='buttons hidden'>
         <button onClick={() => swipe('left')}>No</button>
