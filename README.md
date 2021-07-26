@@ -1,9 +1,11 @@
 
-![DOKALY-LOGO](https://user-images.githubusercontent.com/54341829/126936657-5adb6d97-d118-4789-8815-a711a9a2c61c.png)
+## Help music artists pick the right art for their songs.
 
 ![DOKALY21](https://user-images.githubusercontent.com/54341829/126936573-468bdbb0-c03e-46c6-b2d9-5ebdaad3bc5f.gif)
 
 ## Match maker match maker make me a match already!
+
+Live app in Heroku [here](https://powerful-eyrie-95631.herokuapp.com/)
 
 ---
 
@@ -23,19 +25,21 @@
 
 ## In the beginning
 
-There were bands with songs, and there were visual artists with... yes, art. For eons the two would produce beautiful work and long to share it with the other party... but there were simply not connected.
+There were bands with songs, and there were visual artists with... yes, art. For eons, the two would produce beautiful work, but they were simply not connected.
+
+Also, how many times have you ever picked up an album and thought "This isn't a great look for such awesome music, what were they thinking?" Or worse, how many times you have skipped listening to new music just based on the looks of its cover?
 
 ---
 
 ## What if
 
-We could connect artists? and more importantly, what if allow fans to get involved in deciding what art and images bets represent a song? 
+We could connect artists? and more importantly, what if allow fans to get involved in deciding what art and images best represent a song? 
 
 ---
 
 ## How it works
 
-Each week, we feature a music artist and one of his songs. The fans are able to listen to the music and comment on pictures that match the mood of that song. Those feeling artisitic, can also submit their own art and allow other to comment  browse through many pictures
+Each week, we feature a music artist and one of his songs. Fans are able to listen to the music and comment on pictures that match the mood of that song. Those feeling artisitic, can also submit their own art and let users follow them and see all their contributions. 
 
 ---
 
@@ -47,7 +51,7 @@ This beautiful product has been brought to you by the thoughtful and caring peop
 - [Jason](https://github.com/jayeebee)
 - [Zach](https://github.com/zpuckett)
 - [dj](djrhoten@gmail.com)
-- A guy named Freddy
+- And a guy named Freddy
 
 ---
 
@@ -72,7 +76,7 @@ run "npm install" and then run "npm run seed"
 ---
 
 ## Usage
-"npm run develop" to start locally, and then "git push heroku main" to publish in Heroku (you must setup Mongo first)
+"npm run develop" to start locally, and then "git push heroku main" to publish in Heroku (you must setup Mongo first of course).
 
 ---
 
