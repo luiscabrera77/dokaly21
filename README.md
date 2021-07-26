@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ![logo](/logo/dokaylogo.png)
+=======
+![logo](./images/dokalylogo.png)
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
 
 <BR>
 
@@ -33,7 +37,11 @@ would produce beautiful work and long to share it with the other party... but li
 
 ## Then there was
 
+<<<<<<< HEAD
 Dokay.com saw the need and filled it.
+=======
+Dokaly.com saw the need and filled it.
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
 With the help of a few daft thumbs and opinonated faces, Dokay did what others dared not to do... didn't think was possible (Wayne). And now the arts can play freely, in a random world, they have found a home.
 
 ---
@@ -41,12 +49,23 @@ With the help of a few daft thumbs and opinonated faces, Dokay did what others d
 <br>
 
 ## How it works
+<<<<<<< HEAD
 
 A user will set up a simple profile, this account will be good for individuals wanting to listen and see, or for artists wanting to use the app. After a user sets up an account and logs in, the home page will randomly select music and present images, the user can like or dislike images based on the music they hear.
 
 For aritsts wishing to run a campaign, they can link tracks (up to 5) from their [soundcloud](https://www.soundcloud.com) account, and then upload up to 10 images to go with each track.
 
 artists can see their results, and they can archive or delete campaigns once they've achieved their goals.
+=======
+  
+ A user simply uploads a track that they'd like to have Dokaly users hear. Then they upload up to 10 images they want the listeners to consider while listening to the track. Users, once they set up an account, will be able to randomly listen to tracks and see the images associated with them. They can swipe left for no or right for yes. The artist that uploaded the track and images will get feedback and be able to make better decisions with their branding and marketing. 
+
+<!-- A user will set up a simple profile, this account will be good for individuals wanting to listen and see, or for artists wanting to use the app. After a user sets up an account and logs in, the home page will randomly select music and present images, the user can like or dislike images based on the music they hear.
+
+For aritsts wishing to run a campaign, they can link tracks (up to 5) from their [soundcloud](https://www.soundcloud.com) account, and then upload up to 10 images to go with each track.
+
+artists can see their results, and they can archive or delete campaigns once they've achieved their goals. -->
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
 
 ---
 
@@ -69,7 +88,11 @@ Jazzy made it? No, no he didn't. This beautiful product has been brought to you 
 - [Jason](https://github.com/jayeebee)
 - [Zach](https://github.com/zpuckett)
 - [dj](djrhoten@gmail.com)
+<<<<<<< HEAD
 - Freddy
+=======
+
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
 
 ---
 
@@ -93,11 +116,21 @@ Jazzy made it? No, no he didn't. This beautiful product has been brought to you 
 
 ## Want to see it work?
 
+<<<<<<< HEAD
 [DOKAY](www.Dokay.com)
 
 [DOKAY Github](https://github.com/luiscabrera77/dokay.git)
+=======
+[DOKALY](www.Dokaly.com)
+
+[DOKALY Github](https://github.com/luiscabrera77/dokaly21.git)
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
 
 <br>
 <br>
 
+<<<<<<< HEAD
 ##### ©2021 The furious 6ix
+=======
+##### ©2021 The furious 6ix
+>>>>>>> ce468d8e68b578aee830fd1eccbb222fddc0484b
